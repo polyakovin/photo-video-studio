@@ -1,0 +1,736 @@
+@keyframes pressed {
+    0% {
+      height: 20%;
+      transition: cubic-bezier(0.42,0,1,1);
+      
+    }
+    100% {
+      height: 786px;
+      
+    }
+  }
+
+  @font-face {
+    font-family: Rubik Mono One; /* Гарнитура шрифта */
+    src: url(./font-family/RubikMonoOne-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+   @font-face {
+    font-family: Roboto; /* Гарнитура шрифта */
+    src: url(./font-family/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+  
+
+body{
+    width: 100%;
+    margin:0 auto;
+    font-family: Roboto;
+}
+
+
+
+
+
+.header{
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./img/alex-simpson-I9vjpkRB8XE-unsplash\ 1.png);
+    z-index: 1;
+}
+
+.ch{
+    display:flex;
+    align-items:center;
+    margin-bottom: 40px;
+}
+
+.popup_menu{
+    position: absolute;
+    width: 100%;
+    height: 786px;
+    background-color: white;
+    z-index: 2;
+}
+.popup_menu.active{
+    animation: pressed 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.hidden{
+    display: none;
+}
+.logo{
+    margin-left: 100px;
+    font-size: 40px;
+    color: white;
+}
+
+.header_nav{
+    position: relative;
+    top: 22px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.part{
+    display: flex;
+    margin-right: 118px;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 144px;
+    color: #FF9900;
+}
+
+.contact a{
+    margin-bottom: 10px;
+}
+
+.burger{
+    width:49px;
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+.exit{
+    cursor: pointer;
+    float: right;
+    margin-right: 118px;
+    margin-top: 42px;
+    border: none;
+}
+
+
+.line{
+    margin-top: 0;
+    margin-bottom: 12px;
+    width: 49px;
+    height: 8px;
+    background-color: #FFFEFA;
+}
+
+.header_texts{
+    font-family: Rubik Mono One;
+    width: 630px;
+    margin-top: 182px;
+    font-size: 60px;
+    color: white;
+    margin-left: 100px;
+    text-align: left;
+    
+}
+.text{
+    margin: 0;
+    font-size: 60px;
+    
+}
+
+.header_link{
+    margin-left: 746px;
+    color: white;
+
+}
+
+.header_link h3{
+    font-size: 22px;
+}
+
+.button{
+    font-size: 30px;
+    width:190px;
+    height: 64px;
+    text-align: left;
+    background-color: transparent;
+    color: #FF9900;
+    border: 2px solid #FF9900;
+    margin-right: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-bottom: 120px;
+    cursor: pointer;
+    background-image: url('./img/arrow.png');
+    background-repeat: no-repeat;
+    background-position-x:  90%;
+    background-position-y: center;
+}
+
+.button:hover{
+    background-color: #FF9900;
+    color: black;
+    background-image: url('./img/arrow\ \(1\).png');
+    outline: none;
+}
+
+
+.menu{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 121px;
+    font-size: 60px;
+    align-items: center;
+}
+
+.link{
+    margin-bottom: 70px;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover{
+    color: #FF9900;
+
+}
+
+
+.footer_menu{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    align-items: center;
+}
+
+.social{
+    width:100px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.social a{
+    margin-right: 20px;
+    color: black;
+}
+
+.social a:hover{
+    font-weight: bold;
+    color: #FF9900;
+}
+
+.cont{
+    margin-right: 56px;
+    margin-left: 56px;
+    color: black;
+}
+
+.cont:hover{
+    font-weight: bold;
+    color: #FF9900;
+}
+
+.contact .cont{
+    color: #FF9900;
+}
+
+
+
+
+.about{
+    margin-top: 60px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    width: 1000px;
+    font-size:40px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 111px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.block{
+    width: 190px;
+    height: 212px;
+    background-color: #FF9900;
+    box-shadow: -20px 20px 0 2px white, -20px 20px 0 4px #FF9900;
+    margin-right: 110px;
+}
+.title{
+    margin-left: 10px;
+    font-size: 40px;
+    margin-top: 29px;
+    margin-bottom: 10px;
+    font-family: Rubik Mono One;
+}
+.subtitle{
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 275px;
+    font-size: 40px;
+}
+
+.mid{
+    margin-top: 20px;
+    box-shadow: 20px -20px 0 2px white, 20px -20px 0 4px #FF9900;
+}
+
+.mid .title{
+  margin-top: 19px;
+}
+
+
+
+
+
+.media{
+    margin-top: 164px;
+    margin-bottom: 100px;
+}
+
+.media_inf{
+ width: 1025px;
+ background-color: #211A15;
+}
+
+.media_text{
+    margin-left: 100px;
+    width: 800px;
+    color:white;
+    font-size: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.media_blocks{
+    
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.media_block{
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 21px;
+}
+
+.block_title{
+    font-family: Rubik Mono One;
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+}
+
+.block_img{
+    margin-top: 32px;
+    width: 610px;
+}
+
+.block_button{
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 33px;
+    font-size: 30px;
+    width: 295px;
+    height: 64px;
+    margin-left: 25px;
+    border: none;
+    background-color: #211A15;
+    color: white;
+    text-align: left;
+    box-shadow: -10px 10px 0px 1px #FF9900;
+    cursor: pointer;
+    background-image: url('./img/arrow3.png');
+    background-repeat: no-repeat;
+    background-position-x:  90%;
+    background-position-y: center;
+}
+
+.block_button:hover{
+    box-shadow: none;
+    color: #FF9900;
+    background-image: url('./img/arrow.png');
+
+}
+
+.i{
+   margin-left: 290px;
+}
+
+
+
+
+.trust{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    background-color: #211A15;
+}
+.trust_title{
+    font-family: Rubik Mono One;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.trust_imgs{
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.im{
+    object-fit: contain;
+
+    margin-left: 142px;
+    margin-bottom: 100px;
+}
+
+.second_line{
+    margin-left: 40px;
+}
+
+.last_blocks{
+    display: flex;
+}
+
+.last_block{
+    position: relative;
+    width: 50%;
+    height: 800px;
+    z-index: 1;
+}
+
+.form_title{
+    font-family: Rubik Mono One;
+    margin-left: 100px;
+    font-size: 32px;
+    margin-top: 100px;
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+input{
+    border:none;
+    width: 490px;
+    border-bottom: 1px solid black;
+    margin-bottom: 53px;
+    font-size: 30px;
+    outline: none;   
+}
+
+.check{
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+}
+
+input.check{
+    margin-bottom: 0;
+}
+
+.sub{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.img_bl{
+    display: flex;
+    flex-direction: column;
+    background-image: url('./img/alexander-krivitskiy-WTvsx1hlQUs-unsplash\ 1.png');
+    color: #FF9900;
+    font-size: 30px;
+    align-items: center;
+}
+
+.bl_cont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 257px;
+    text-align: center;
+    width: 300px;
+
+}
+
+
+
+.bl_cont a{
+    color:#FF9900 ;
+    margin-bottom: 30px;
+}
+.bl_cont a:hover{
+    font-weight: bold;
+}
+
+.bl_social a{
+    color:#FF9900 ;
+}
+
+.bl_social a:hover{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bl_social{
+    margin-top: 77px;
+    width:100px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+.footer{
+    background-color: #211A15;
+}
+
+.footer_text{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 98px;
+    background-color: #211A15;
+    color:white;
+    font-size: 16px;
+    align-items: center;
+}
+
+.fot{
+    text-decoration: none;
+    color: #FFFEFA;
+}
+
+
+
+.desiner:hover{
+    font-weight: bold;
+    color: #FF9900;
+}
+
+.popup_form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    height: 800px;
+    z-index: 2;
+    background-color: white;
+}
+
+.popup_text{
+    font-family: Roboto;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
+}
+
+.popup_but{
+    margin-top: 140px;
+    margin-left: 100px;
+    border: 2px solid black;
+    color: black;
+    background-image: url('./img/arrow\ \(1\).png');
+}
+
+.popup_but:hover{
+    background-color: #211A15;
+    color: #FF9900;
+    background-image: url('./img/arrow.png');
+
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+.foto_back{
+    background-image: url('./img/pexels-cottonbro-3419717.png');
+}
+
+
+.tx{
+    width: 820px;
+    font-family: Roboto;
+    font-size: 40px;
+    padding-bottom: 80px;
+}
+
+.sliders{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.sl_title{
+    margin: 0;
+    font-family: Rubik Mono One;
+    font-size: 50px;
+}
+
+.sl_subtitle{
+    width: 820px;
+    font-family: Roboto;
+    font-size: 30px;
+}
+
+
+.Sl{
+    margin-bottom: 100px;
+    height: 800px;
+
+}
+
+.sl_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+      justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+      display: flex;
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: block;
+
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+  }
+
+  .vid div.sim-slider-arrow-right{
+      top:30%;
+  }
+  .vid div.sim-slider-arrow-left{
+    top:30%;
+}
+  
+  div.sim-slider-arrow-left {
+    top: 50%;
+    display: block;
+    background: url("./img/Polygon\ 1.png") no-repeat;
+    background-size: cover;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 0px;
+    top: 50%;
+    display: block;
+    background: url("./img/Polygon\ 3.png") no-repeat;
+    background-size: cover;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    background: url("./img/Polygon\ yel1.png") no-repeat;
+    background-size: cover;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    background: url("./img/Polygon\ yel2.png") no-repeat;
+    background-size: cover;
+  }
+  
+ .items{
+     display: flex;
+     justify-content: center;
+     
+ }
+
+ .item_big{
+    margin-right: 20px;
+ }
+
+ .big_img{
+     width: 715px;
+     height: 552px;
+     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+     object-fit: cover;
+
+     
+ }
+
+ .sim-slider-list p{
+     font-size: 20px;
+ }
+
+ .small_img{
+     width: 295px;
+    
+ }
+
+ .big_text{
+
+ }
+
+ .vid .item_small{
+ }
+
+ .small_text{
+     width: 295px;
+ }
+
+
+ .video_back{
+     background-image: url('./img/pexels-kyle-loftus-2510428.png');
+ }
+
+ .vid{
+     height: 600px;
+ }
+
+ .vid_text{
+     width: 295px;
+     margin-left: 15px;
+ }
